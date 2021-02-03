@@ -6,4 +6,13 @@ class CartoonsController < ApplicationController
   def new
     @cartoon = Cartoon.new
   end
+
+  def create
+    binding.pry
+  end
+
+  private
+    def cartoon_params
+      params.require(:cartoon).permit(:name)
+    end
 end
