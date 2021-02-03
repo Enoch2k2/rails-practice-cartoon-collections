@@ -1,6 +1,6 @@
-<div class="container white" style="padding: 10px; margin-top: 10px;">
-      <h3 class="center">Cartoons</h3>
-      <div class="row">
-        <%= render @cartoons %>
-      </div>
-</div>
+<%= render "layouts/wrapper" do %>
+  <h3 class="center">Cartoons</h3>
+  <div class="row">
+    <%= render @cartoons %>
+  </div>
+<% end %>
