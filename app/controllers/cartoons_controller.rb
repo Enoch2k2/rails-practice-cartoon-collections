@@ -13,6 +13,7 @@ class CartoonsController < ApplicationController
     if @cartoon.save
       redirect_to cartoons_path
     else
+      flash.now[:error] = @cartoon.errors.full_messages
       render :new
     end
   end

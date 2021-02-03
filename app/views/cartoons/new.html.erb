@@ -1,7 +1,7 @@
 <%= render "layouts/wrapper" do %>
   <h3 class="center teal-text text-darken-4">Create Cartoon</h3>
   <div class="container" style="margin-bottom: 20px">
-  
+    <%= render "cartoons/form_errors" %>
     <%= form_for @cartoon do |f| %>
       <div class="input-field">
         <%= f.text_field :name %>
