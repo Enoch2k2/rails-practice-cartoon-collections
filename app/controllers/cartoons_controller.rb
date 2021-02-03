@@ -8,7 +8,13 @@ class CartoonsController < ApplicationController
   end
 
   def create
-    binding.pry
+    @cartoon = Cartoon.new(cartoon_params)
+
+    if @cartoon.save
+      redirect_to cartoons_path
+    else
+      render :new
+    end
   end
 
   private
