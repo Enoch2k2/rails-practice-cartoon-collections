@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Cartoon.create(name: "Adventures of Billy and Mandy")
+Cartoon.create(name: "Pokemon")
+Cartoon.create(name: "He-man and the masters of the universe")
+Cartoon.create(name: "Tazmania")
+Cartoon.create(name: "Looney Tunes")
+Cartoon.create(name: "Animaniacs")
+Cartoon.create(name: "Smurfs")
+Cartoon.create(name: "Batman")
+Cartoon.create(name: "Teenage Mutant Ninja Turtles")
